@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bewerbung – High Command FIB</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0f14;
+      color: #e6e6e6;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    /* HEADER / HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #0b0f14 0%, #121a24 100%);
+      border-bottom: 2px solid rgba(255,255,255,0.08);
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 800px;
+      padding: 40px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+    }
+
+    .hero-content .identity {
+      font-size: 1.2rem;
+      opacity: 0.85;
+      margin-bottom: 30px;
+    }
+
+    .scroll-hint {
+      font-size: 0.9rem;
+      opacity: 0.6;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(6px); }
+    }
+
+    .hero-image {
+      width: 140px;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    /* CONTENT */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 35px;
+    }
+
+    .card {
+      background: #121a24;
+      border-radius: 12px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,0.2);
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .card p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.85rem;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-content">
+      <img src="https://i.imgur.com/1M56HM5.png" alt="FIB Emblem" class="hero-image" />
+      <h1>High Command Bewerbung</h1>
+      <div class="identity">
+        Ruben Riannon<br />
+        Dienstnummer 33 · ID 124964
+      </div>
+      <div class="scroll-hint">▼ Scrollen für Details ▼</div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="columns">
+      <div class="card">
+        <h2>Motivation</h2>
+        <p>
+          Ich glaube, dass gerade das reine Erstreben nach Höherem dem Handeln
+          einen Sinn verleiht. Teil des High Commands zu werden, ist für mich
+          allein des Fortschritts willen erstrebenswert. Durchaus bin ich davon
+          überzeugt, dass ich gerade durch den Posten im High Command des FIBs
+          neue Höhen erreichen kann, die mir die Möglichkeit geben, dem FIB als
+          Organisation und all seinen Beamten noch besser zu dienen.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Erfahrung</h2>
+        <p>
+          An Erfahrung und Leistung fehlt es mir in keiner Hinsicht. Ich konnte
+          über einen langen Zeitraum hinweg wertvolle Kenntnisse in mehreren
+          Positionen innerhalb verschiedener High-Command-Strukturen sammeln.
+          Dadurch bin ich mit organisatorischen Abläufen, Entscheidungswegen
+          sowie internen Hierarchien bestens vertraut.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Leistungen & Eignung</h2>
+        <p>
+          Warum gerade ich der ideale Kandidat bin, lässt sich klar begründen:
+          Neben meiner Erfahrung in leitenden Positionen verfüge ich über
+          ausgeprägte Führungsqualitäten und einen professionellen Umgang mit
+          Mitarbeitern. Insbesondere meine Tätigkeit in der HR
+          (18 | Administration of HR) hat mir gezeigt, wie wichtig Struktur,
+          Kommunikation und Verantwortungsbewusstsein sind.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Bewerbung – High Command FIB</p>
+    </footer>
+  </div>
+</body>
+</html>
